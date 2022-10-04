@@ -314,10 +314,10 @@ le serveur DNS ne considère pas l'adresse Ip 231.34.113.12 comme un domaine.
 
 # IV. Wireshark
 
-![netcat](https://github.com/SmlDreams/tp-reseau/pics/netcat.png)
+![netcat](https://github.com/SmlDreams/tp-reseau/blob/main/pics/netcat.png)
 
 
-![ping 8.8.8.8](https://github.com/SmlDreams/tp-reseau/pics/ping%208.8.8.8.png)
+![ping 8.8.8.8](https://github.com/SmlDreams/tp-reseau/blob/main/pics/ping%208.8.8.8.png)
 
-![requête DNS](https://github.com/SmlDreams/tp-reseau/pics/requete%20DNS%20google.com.png)
+![requête DNS](https://github.com/SmlDreams/tp-reseau/blob/main/pics/requete%20DNS%20google.com.png)
 
