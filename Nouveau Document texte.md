@@ -155,4 +155,4 @@ tandis que l'adresse :
 
 **ip gateway network : 255.255.255.255**
 
-**ip DNS : 0.0.0.0**
+**ip DNS : 8.8.8.8 & 8.8.4.4 & 1.1.1.1**
