@@ -31,7 +31,7 @@ Durée approximative des boucles en millisecondes :
 echo request : 8
 echo reply : 0  
 
-![ping](https://github.com/SmlDreams/tp-reseau/blob/main/WireShark/ping.pcapng)
+[Capture ping](https://github.com/SmlDreams/tp-reseau/blob/main/WireShark/ping.pcapng)
 
 🦈 **PCAP qui contient les paquets ICMP qui vous ont permis d'identifier les types ICMP**
 
@@ -111,7 +111,7 @@ la deuxieme Tram à pour :
     -10.10.10.1;d8:bb:c1:f4:60:61
 🦈 **PCAP qui contient les trames ARP**
 
-![Arp](https://github.com/SmlDreams/tp-reseau/blob/main/WireShark/ARP.pcapng)
+[Capture Arp](https://github.com/SmlDreams/tp-reseau/blob/main/WireShark/ARP.pcapng)
 
 adresse : 
 10.10.10.1;d8:bb:c1:f4:60:61 fait la demande ARP.
@@ -122,7 +122,7 @@ tandis que l'adresse :
 
 🌞 **Wireshark it**
 
-![DHCP](https://github.com/SmlDreams/tp-reseau/blob/main/WireShark/requ%C3%AAte%20DHCP.pcapng)
+[capture DHCP](https://github.com/SmlDreams/tp-reseau/blob/main/WireShark/requ%C3%AAte%20DHCP.pcapng)
 
 ***Discover : ***
 
