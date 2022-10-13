@@ -49,10 +49,7 @@ IPMAC PC2 : 0a:00:27:00:00:3c
 
 🌞**Analyse de trames**
 
-- utilisez la commande `tcpdump` pour réaliser une capture de trame
-- videz vos tables ARP, sur les deux machines, puis effectuez un `ping`
-
-🦈 **Capture réseau `tp2_arp.pcapng`** qui contient un ARP request et un ARP reply
+[ARP request reply](https://github.com/SmlDreams/tp-reseau/blob/main/tp3/pics/ARP_request_reply.pcap)
 
 > **Si vous ne savez pas comment récupérer votre fichier `.pcapng`** sur votre hôte afin de l'ouvrir dans Wireshark, et me le livrer en rendu, demandez-moi.
 
@@ -233,7 +230,7 @@ rtt min/avg/max/mdev = 21.297/22.791/25.445/1.464 ms
 
 🦈 **Capture réseau `tp2_routage_internet.pcapng`**
 
-[ping to internet]()
+[ping to internet](https://github.com/SmlDreams/tp-reseau/blob/main/tp3/pics/ping_internet.pcap)
 
 ## III. DHCP
 
