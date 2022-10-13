@@ -141,7 +141,7 @@ ROUTEUR request if MAC of PC2 is always here , PC2 reply
 
 🦈 **Capture réseau `tp2_routage_marcel.pcapng`**
 
-[demarche ping john à marcel]()
+[arp+ping john à marcel](https://github.com/SmlDreams/tp-reseau/blob/main/tp3/pics/arp%2Bping.pcap)
 
 ### 3. Accès internet
 
@@ -357,8 +357,4 @@ rtt min/avg/max/mdev = 23.214/23.816/24.418/0.602 ms
 
 🌞**Analyse de trames**
 
-- lancer une capture à l'aide de `tcpdump` afin de capturer un échange DHCP
-- demander une nouvelle IP afin de générer un échange DHCP
-- exportez le fichier `.pcapng`
-
-🦈 **Capture réseau `tp2_dhcp.pcapng`**
+[DORA](https://github.com/SmlDreams/tp-reseau/blob/main/tp3/pics/requestDHCP.pcapng)
