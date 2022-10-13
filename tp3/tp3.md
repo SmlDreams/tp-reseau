@@ -51,8 +51,6 @@ IPMAC PC2 : 0a:00:27:00:00:3c
 
 [ARP request reply](https://github.com/SmlDreams/tp-reseau/blob/main/tp3/pics/ARP_request_reply.pcap)
 
-> **Si vous ne savez pas comment récupérer votre fichier `.pcapng`** sur votre hôte afin de l'ouvrir dans Wireshark, et me le livrer en rendu, demandez-moi.
-
 ## II. Routage
 
 ### 1. Mise en place du routage
