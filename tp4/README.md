@@ -80,23 +80,18 @@ live twitch :
 
 🌞 **Demandez aux OS**
 
-- repérez, avec une commande adaptée (`netstat` ou `ss`), la connexion SSH depuis votre machine
-- ET repérez la connexion SSH depuis votre VM
+```
+PS C:\Users\quentin> netstat
 
-🦈 **Je veux une capture clean avec le 3-way handshake, un peu de trafic au milieu et une fin de connexion**
+Connexions actives
 
-## 2. Routage
+  Proto  Adresse locale         Adresse distante       État
+  TCP    10.4.1.1:50364         node1:ssh              ESTABLISHED
+```
 
-Ouais, un peu de répétition, ça fait jamais de mal. On va créer une machine qui sera notre routeur, et **permettra à toutes les autres machines du réseau d'avoir Internet.**
-
-🖥️ **Machine `router.tp4.b1`**
-
-- n'oubliez pas de dérouler la checklist (voir [les prérequis du TP](#0-prérequis))
-- donnez lui l'adresse IP `10.4.1.11/24` sur sa carte host-only
-- ajoutez-lui une carte NAT, qui permettra de donner Internet aux autres machines du réseau
-- référez-vous au TP précédent
-
-> Rien à remettre dans le compte-rendu pour cette partie.
+```
+tcp      ESTAB     0          0                                10.4.1.11:ssh               10.4.1.1:50364
+```
 
 # III. DNS
 
