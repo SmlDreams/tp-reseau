@@ -240,10 +240,31 @@ success
 🌞 **Sur la machine `node1.tp4.b1`**
 
 -add ```DNS=10.4.1.201``` in ```/etc/sysconfig/network```
-- assurez vous que vous pouvez :
-  - résoudre des noms comme `node1.tp4.b1` et `dns-server.tp4.b1`
-  - mais aussi des noms comme `www.google.com`
 
+```
+[dreams@node1 ~]$ dig node1.tp4.b1
+
+;; ANSWER SECTION:
+node1.tp4.b1.           86400   IN      A       10.4.1.11
+
+;; SERVER: 10.4.1.201#53(10.4.1.201)
+```
+```
+[dreams@node1 ~]$ dig dns-server.tp4.b1
+
+;; ANSWER SECTION:
+dns-server.tp4.b1.      86400   IN      A       10.4.1.201
+
+;; SERVER: 10.4.1.201#53(10.4.1.201)
+```
+```
+[dreams@node1 ~]$ dig www.google.com
+
+;; ANSWER SECTION:
+www.google.com.         300     IN      A       142.250.179.100
+
+;; SERVER: 10.4.1.201#53(10.4.1.201)
+```
 🌞 **Sur votre PC**
 
 - utilisez une commande pour résoudre le nom `node1.tp4.b1` en utilisant `10.4.1.201` comme serveur DNS
