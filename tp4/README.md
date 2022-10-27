@@ -267,8 +267,15 @@ www.google.com.         300     IN      A       142.250.179.100
 ```
 🌞 **Sur votre PC**
 
-- utilisez une commande pour résoudre le nom `node1.tp4.b1` en utilisant `10.4.1.201` comme serveur DNS
+Windows :
 
-> Le fait que votre serveur DNS puisse résoudre un nom comme `www.google.com`, ça s'appelle la récursivité et c'est activé avec la ligne `recursion yes;` dans le fichier de conf.
+```
+PS C:\Users\quentin> nslookup
+Serveur par dÚfaut :   dns.google
+Address:  8.8.8.8
 
-🦈 **Capture d'une requête DNS vers le nom `node1.tp4.b1` ainsi que la réponse**
+> set type=soa
+> node1.tp4.b1 10.4.1.201
+```
+
+[DNS request](https://github.com/SmlDreams/tp-reseau/blob/main/tp4/pics/DNS%20request%20From%20windows.pcapng)
