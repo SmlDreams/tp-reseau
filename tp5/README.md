@@ -268,3 +268,96 @@ google.com resolved to 216.58.214.78
 84 bytes from 216.58.214.78 icmp_seq=5 ttl=112 time=23.963 ms
 
 ```
+
+# V. Add a building
+
+🌞  **Vous devez me rendre le show running-config de tous les équipements**
+
+**Pour le sw1 :**
+
+```
+interface Ethernet0/0
+ switchport access vlan 10
+ switchport trunk allowed vlan 10,20,30
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+!
+interface Ethernet0/1
+ switchport access vlan 10
+ switchport mode access
+!
+
+[...]
+
+interface Ethernet3/3
+ switchport trunk allowed vlan 10,20,30
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+
+```
+
+**Pour le sw2 :**
+
+```
+interface Ethernet0/0
+ switchport access vlan 10
+ switchport mode access
+!
+interface Ethernet0/1
+ switchport access vlan 10
+ switchport mode access
+!
+interface Ethernet0/2
+ switchport access vlan 20
+ switchport mode access
+!
+interface Ethernet0/3
+ switchport access vlan 30
+ switchport mode access
+
+[...]
+
+interface Ethernet3/3
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+```
+
+**pour le sw3 :**
+
+```
+interface Ethernet0/3
+ switchport access vlan 10
+ switchport mode access
+```
+
+**Pour le R1 :**
+
+```
+interface FastEthernet0/0
+ no ip address
+ ip nat inside
+ ip virtual-reassembly
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/0.10
+ encapsulation dot1Q 10
+ ip address 10.5.10.254 255.255.255.0
+!
+interface FastEthernet0/0.20
+ encapsulation dot1Q 20
+ ip address 10.5.20.254 255.255.255.0
+!
+interface FastEthernet0/0.30
+ encapsulation dot1Q 30
+ ip address 10.5.30.254 255.255.255.0
+!
+interface FastEthernet0/1
+ ip address dhcp
+ ip nat outside
+ ip virtual-reassembly
+ duplex auto
+ speed auto
+!
+```
+
